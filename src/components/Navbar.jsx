@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//  import { useSelector } from "react-redux";
+ import { useSelector } from "react-redux";
+
 
 
 const Navbar = () => {
 
-// const alluser = useSelector ( (state) => state.app.users)
-//  console.log(users)
+const users = useSelector ( (state) => state.app)
+
+ 
 
     return (
 
@@ -23,7 +25,7 @@ const Navbar = () => {
                             <li className="nav-item">
 
                                 <Link to="/read" className="navlink">
-                                    all Post
+                                    all Post 
                                 </Link>
 
                             </li>
